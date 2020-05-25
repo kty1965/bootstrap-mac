@@ -91,7 +91,7 @@ rvm install ruby-2.6.0 # ruby-2.6.0
 
 ### nvm install
 
-add nvm environemnt to `.zshrc` or `.bash_profile`
+add `nvm`, `rvm` environemnt to `.zshrc` or `.bash_profile`
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -104,3 +104,15 @@ rvm use --default ruby-2.6.0
 nvm use v12.14.0
 ```
 
+### Add to `.zshrc` file
+
+```bash
+# kube_ps1
+source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+PS1='$(kube_ps1)'$PS1
+# for krew
+export PATH="${PATH}:${HOME}/.krew/bin"
+# alias docker clean image, ps
+alias docker_clean_images='docker rmi $(docker images --filter "dangling=true" -q --no-trunc) && docker rmi $(docker images | grep "none" | awk "/ / { print $3 }")'
+alias docker_clean_ps='docker rm $(docker ps -qa --no-trunc --filter "status=exited")'
+```
