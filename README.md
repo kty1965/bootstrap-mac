@@ -45,29 +45,24 @@ brew cask install zoomus
 
 ### install packages
 ```bash
-brwe install aws-iam-authenticator
-brwe install awscli
-brwe install bash-completion
-brwe install eksctl # for kubernetes
-brwe install helm # for kubernetes
-brwe install htop
-brwe install jq
-brwe install k9s # for kubernetes
-brwe install kube-ps1 # for kubernetes
-brwe install kubectx # for kuberntes
-brwe install parquet-tools
-# brwe install redis
-# brwe install openjdk
-# brwe install sbt
-# brwe install scala
-# brwe install kotlin
-# brew install gradle
-# brew install postgres
-brwe install telnet
-brwe install terraform
-brwe install tldr
-brwe install tree
-brwe install wget
+brew tap weaveworks/tap
+
+brew install aws-iam-authenticator
+brew install awscli
+brew install bash-completion
+brew install eksctl # for kubernetes
+brew install helm # for kubernetes
+brew install htop
+brew install jq
+brew install k9s # for kubernetes
+brew install kube-ps1 # for kubernetes
+brew install kubectx # for kuberntes
+brew install parquet-tools
+brew install telnet
+brew install terraform
+brew install tldr
+brew install tree
+brew install wget
 ```
 
 
