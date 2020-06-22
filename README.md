@@ -63,6 +63,7 @@ brew install terraform
 brew install tldr
 brew install tree
 brew install wget
+brew install minikube
 ```
 
 
