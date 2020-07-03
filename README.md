@@ -57,6 +57,7 @@ brew install jq
 brew install k9s # for kubernetes
 brew install kube-ps1 # for kubernetes
 brew install kubectx # for kuberntes
+brew install derailed/k9s/k9s
 brew install parquet-tools
 brew install telnet
 brew install terraform
@@ -91,13 +92,12 @@ add `nvm`, `rvm` environemnt to `.zshrc` or `.bash_profile`
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-nvm install v12.14.0
+nvm install v12.18.2
 ```
 
 ### node, ruby
 ```bash
 rvm use --default ruby-2.6.0
-nvm use v12.14.0
 ```
 
 ### Add to `.zshrc` file
