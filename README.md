@@ -32,7 +32,7 @@ brew cask install alfred
 # brew cask install bose-soundtouch
 brew cask install dropbox
 brew cask install intellij-idea-ce
-brew cask install iterm2
+brew cask install iterm2₩
 # brew cask install java8
 brew cask install macdown
 brew cask install notion
@@ -56,7 +56,7 @@ brew install htop
 brew install jq
 brew install k9s # for kubernetes
 brew install kube-ps1 # for kubernetes
-brew install kubectx # for kuberntes
+brew install kubectx # for kuberntesks
 brew install derailed/k9s/k9s
 brew install parquet-tools
 brew install telnet
@@ -65,6 +65,7 @@ brew install tldr
 brew install tree
 brew install wget
 brew install minikube
+brew install istioctl
 ```
 
 
@@ -111,4 +112,24 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 # alias docker clean image, ps
 alias docker_clean_images='docker rmi $(docker images --filter "dangling=true" -q --no-trunc) && docker rmi $(docker images | grep "none" | awk "/ / { print $3 }")'
 alias docker_clean_ps='docker rm $(docker ps -qa --no-trunc --filter "status=exited")'
+```
+
+
+### visualstudio code settings.json
+
+`~/Library/Application\ Support/Code/User/settings.json`
+
+```json
+{
+  "window.zoomLevel": 1,
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "editor.fontSize": 12,
+  "editor.formatOnPaste": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "workbench.colorTheme": "Monokai",
+  "workbench.colorCustomizations": {}
+}
+
 ```
