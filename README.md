@@ -18,7 +18,7 @@ brew cask install 1password
 # brew cask install blue-jeans
 brew cask install docker
 brew cask install google-chrome
-# brew cask install istat-menus
+brew cask install istat-menus
 brew cask install java11
 brew cask install karabiner-elements
 # brew cask install mongodb-compass
@@ -42,7 +42,6 @@ brew cask install tunnelbear
 brew cask install vlc
 brew cask install zoomus
 brew cask install keybase
-brew cask install istat-menus
 ```
 
 ### install packages
@@ -77,6 +76,14 @@ touch ~/.zshrc
 compaudit | xargs chmod g-w
 ```
 
+## kubectl settings
+
+```zsh
+echo "source <(kubectl completion zsh)" >> ~/.zshrc
+echo 'alias k=kubectl' >>~/.zshrc
+echo 'complete -F __start_kubectl k' >>~/.zshrc
+```
+
 ## Languages
 
 ### tfenv, terraform install
@@ -84,6 +91,7 @@ compaudit | xargs chmod g-w
 ```zsh
 brew install tfenv
 tfenv install 0.12.29
+tfenv use 0.12.29
 ```
 
 ### rvm, ruby install
