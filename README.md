@@ -5,14 +5,14 @@ need to packages.
 
 ### install
 
-```bash
+```zsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 ### install cask packages
 
-```bash
-brew tap caskroom/versions
+```zsh
+brew tap homebrew/cask-versions
 brew cask install 1password
 # brew cask install android-platform-tools
 # brew cask install blue-jeans
@@ -32,7 +32,7 @@ brew cask install alfred
 # brew cask install bose-soundtouch
 brew cask install dropbox
 brew cask install intellij-idea-ce
-brew cask install iterm2₩
+brew cask install iterm2
 # brew cask install java8
 brew cask install macdown
 brew cask install notion
@@ -41,10 +41,12 @@ brew cask install spotify
 brew cask install tunnelbear
 brew cask install vlc
 brew cask install zoomus
+brew cask install keybase
+brew cask install istat-menus
 ```
 
 ### install packages
-```bash
+```zsh
 brew tap weaveworks/tap
 
 brew install aws-iam-authenticator
@@ -60,7 +62,6 @@ brew install kubectx # for kuberntesks
 brew install derailed/k9s/k9s
 brew install parquet-tools
 brew install telnet
-brew install terraform
 brew install tldr
 brew install tree
 brew install wget
@@ -69,17 +70,24 @@ brew install istioctl
 ```
 
 
-## xcode install
-```bash
-# install mac app store
-# and then
-sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+## .zshrc settings
+
+```zsh
+touch ~/.zshrc
+compaudit | xargs chmod g-w
 ```
 
 ## Languages
 
+### tfenv, terraform install
+
+```zsh
+brew install tfenv
+tfenv install 0.12.29
+```
+
 ### rvm, ruby install
-```bash
+```zsh
 # ruby
 brew install gpg
 gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
@@ -91,19 +99,19 @@ rvm install ruby-2.6.0 # ruby-2.6.0
 
 add `nvm`, `rvm` environemnt to `.zshrc` or `.bash_profile`
 
-```bash
+```zsh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install v12.18.2
 ```
 
 ### node, ruby
-```bash
-rvm use --default ruby-2.6.0
+```zsh
+rvm use --default ruby-2.7.1
 ```
 
 ### Add to `.zshrc` file
 
-```bash
+```zsh
 # kube_ps1
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 PS1='$(kube_ps1)'$PS1
