@@ -42,6 +42,7 @@ brew cask install tunnelbear
 brew cask install vlc
 brew cask install zoomus
 brew cask install keybase
+brew cask install pritunl
 ```
 
 ### install packages
