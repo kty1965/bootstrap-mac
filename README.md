@@ -43,6 +43,8 @@ brew cask install vlc
 brew cask install zoomus
 brew cask install keybase
 brew cask install pritunl
+brew cask install aws-vault
+brew cask install tiles
 ```
 
 ### install packages
