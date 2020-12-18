@@ -131,6 +131,17 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 # alias docker clean image, ps
 alias docker_clean_images='docker rmi $(docker images --filter "dangling=true" -q --no-trunc) && docker rmi $(docker images | grep "none" | awk "/ / { print $3 }")'
 alias docker_clean_ps='docker rm $(docker ps -qa --no-trunc --filter "status=exited")'
+
+# $1: head_ref, $2: base_ref
+function glc() {
+  [[ "$#" != 2 ]]
+  local head_ref=$1
+  local base_ref=$2
+  echo "checkout $head_ref track origin/$base_ref"
+  command git fetch --all --prune
+  command git checkout $head_ref 2>/dev/null || command git checkout -b $head_ref --track origin/$base_ref
+  command git pull --rebase
+}
 ```
 
 
