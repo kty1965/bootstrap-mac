@@ -150,3 +150,5 @@ alias docker_clean_ps='docker rm $(docker ps -qa --no-trunc --filter "status=exi
 }
 
 ```
+
+Visual studio [Setting Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 를 활용하여 extension 관리
