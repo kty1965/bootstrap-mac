@@ -14,6 +14,7 @@ need to packages.
 ```zsh
 brew tap homebrew/cask-versions
 brew cask install 1password
+brew install --cask 1password-cli
 # brew cask install android-platform-tools
 # brew cask install blue-jeans
 brew cask install docker
