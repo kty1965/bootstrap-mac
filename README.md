@@ -70,6 +70,7 @@ brew install tree
 brew install wget
 brew install minikube
 brew install istioctl
+brew install dive # for docker image layer
 ```
 
 
