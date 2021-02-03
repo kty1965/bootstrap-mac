@@ -71,6 +71,8 @@ brew install wget
 brew install minikube
 brew install istioctl
 brew install dive # for docker image layer
+brew install pre-commit
+brew install terraform-docs tflint
 ```
 
 
