@@ -73,6 +73,8 @@ brew install istioctl
 brew install dive # for docker image layer
 brew install pre-commit
 brew install terraform-docs tflint
+brew install gawk tfsec coreutils checkov terrascan
+
 ```
 
 
