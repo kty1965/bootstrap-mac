@@ -74,7 +74,7 @@ brew install dive # for docker image layer
 brew install pre-commit
 brew install terraform-docs tflint
 brew install gawk tfsec coreutils checkov terrascan
-
+brew install graphviz # for graph
 ```
 
 
@@ -119,6 +119,12 @@ add `nvm`, `rvm` environemnt to `.zshrc` or `.bash_profile`
 ```zsh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install v12.18.2
+```
+
+### gvm install
+
+```zsh
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 ```
 
 ### node, ruby
