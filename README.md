@@ -121,6 +121,11 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install v12.18.2
 ```
 
+### pip pacakges
+
+```zsh
+pip install s3-tree
+
 ### gvm install
 
 ```zsh
@@ -174,4 +179,28 @@ function glc() {
   "workbench.colorCustomizations": {}
 }
 
+```
+
+
+Visual studio [Setting Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 를 활용하여 extension 관리
+
+## direnvrc
+
+ref: [Roger's Blog](https://blog.differentpla.net/)
+
+in `~/.direnvrc`
+
+```sh
+use_nodejs() {
+  NODE_VERSION="$1"
+
+  type nvm >/dev/null 2>&1 || . ~/.nvm/nvm.sh
+  nvm use "$NODE_VERSION"
+}
+```
+
+using `.envrc`
+
+```sh
+use nodejs v14.17.4
 ```
