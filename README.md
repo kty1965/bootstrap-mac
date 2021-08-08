@@ -158,3 +158,24 @@ alias docker_clean_ps='docker rm $(docker ps -qa --no-trunc --filter "status=exi
 ```
 
 Visual studio [Setting Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 를 활용하여 extension 관리
+
+## direnvrc
+
+ref: [Roger's Blog](https://blog.differentpla.net/)
+
+in `~/.direnvrc`
+
+```sh
+use_nodejs() {
+  NODE_VERSION="$1"
+
+  type nvm >/dev/null 2>&1 || . ~/.nvm/nvm.sh
+  nvm use "$NODE_VERSION"
+}
+```
+
+using `.envrc`
+
+```sh
+use nodejs v14.17.4
+```
