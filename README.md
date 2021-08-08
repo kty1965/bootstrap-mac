@@ -14,6 +14,7 @@ need to packages.
 ```zsh
 brew tap homebrew/cask-versions
 brew cask install 1password
+brew install --cask 1password-cli
 # brew cask install android-platform-tools
 # brew cask install blue-jeans
 brew cask install docker
@@ -43,6 +44,8 @@ brew cask install vlc
 brew cask install zoomus
 brew cask install keybase
 brew cask install pritunl
+brew cask install aws-vault
+brew cask install tiles
 ```
 
 ### install packages
@@ -67,6 +70,11 @@ brew install tree
 brew install wget
 brew install minikube
 brew install istioctl
+brew install dive # for docker image layer
+brew install pre-commit
+brew install terraform-docs tflint
+brew install gawk tfsec coreutils checkov terrascan
+brew install graphviz # for graph
 ```
 
 
@@ -117,6 +125,11 @@ nvm install v12.18.2
 
 ```zsh
 pip install s3-tree
+
+### gvm install
+
+```zsh
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 ```
 
 ### node, ruby
@@ -135,6 +148,17 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 # alias docker clean image, ps
 alias docker_clean_images='docker rmi $(docker images --filter "dangling=true" -q --no-trunc) && docker rmi $(docker images | grep "none" | awk "/ / { print $3 }")'
 alias docker_clean_ps='docker rm $(docker ps -qa --no-trunc --filter "status=exited")'
+
+# $1: head_ref, $2: base_ref
+function glc() {
+  [[ "$#" != 2 ]]
+  local head_ref=$1
+  local base_ref=$2
+  echo "checkout $head_ref track origin/$base_ref"
+  command git fetch --all --prune
+  command git checkout $head_ref 2>/dev/null || command git checkout -b $head_ref --track origin/$base_ref
+  command git pull --rebase
+}
 ```
 
 
@@ -156,6 +180,7 @@ alias docker_clean_ps='docker rm $(docker ps -qa --no-trunc --filter "status=exi
 }
 
 ```
+
 
 Visual studio [Setting Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 를 활용하여 extension 관리
 
