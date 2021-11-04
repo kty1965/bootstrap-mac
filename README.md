@@ -68,6 +68,9 @@ brew install wget
 brew install minikube
 brew install istioctl
 brew install k2tf
+
+brew tap mike-engel/jwt-cli
+brew install jwt-cli
 ```
 
 
