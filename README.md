@@ -71,6 +71,8 @@ brew install k2tf
 
 brew tap mike-engel/jwt-cli
 brew install jwt-cli
+
+brew install krew
 ```
 
 
@@ -87,6 +89,12 @@ compaudit | xargs chmod g-w
 echo "source <(kubectl completion zsh)" >> ~/.zshrc
 echo 'alias k=kubectl' >>~/.zshrc
 echo 'complete -F __start_kubectl k' >>~/.zshrc
+```
+
+krew plugins
+
+```zsh
+kubectl krew install oidc-login
 ```
 
 ## Languages
