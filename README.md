@@ -73,6 +73,9 @@ brew tap mike-engel/jwt-cli
 brew install jwt-cli
 
 brew install krew
+
+brew install argo
+brew install argocd
 ```
 
 
