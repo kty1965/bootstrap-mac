@@ -1,4 +1,5 @@
 # bootstrap-mac
+
 need to packages.
 
 ## brew
@@ -49,6 +50,7 @@ brew cask install tiles
 ```
 
 ### install packages
+
 ```zsh
 brew tap weaveworks/tap
 
@@ -61,7 +63,8 @@ brew install htop
 brew install jq
 brew install k9s # for kubernetes
 brew install kube-ps1 # for kubernetes
-brew install kubectx # for kuberntesks
+brew install kubectx # for kubernetes
+brew install fzf # for kubernetes
 brew install derailed/k9s/k9s
 brew install parquet-tools
 brew install telnet
@@ -75,8 +78,8 @@ brew install pre-commit
 brew install terraform-docs tflint
 brew install gawk tfsec coreutils checkov terrascan
 brew install graphviz # for graph
+brew install asciinema # for cli record
 ```
-
 
 ## .zshrc settings
 
@@ -104,6 +107,7 @@ tfenv use 0.12.29
 ```
 
 ### rvm, ruby install
+
 ```zsh
 # ruby
 brew install gpg
@@ -133,6 +137,7 @@ bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/bins
 ```
 
 ### node, ruby
+
 ```zsh
 rvm use --default ruby-2.7.1
 ```
@@ -161,7 +166,6 @@ function glc() {
 }
 ```
 
-
 ### visualstudio code settings.json
 
 `~/Library/Application\ Support/Code/User/settings.json`
@@ -180,7 +184,6 @@ function glc() {
 }
 
 ```
-
 
 Visual studio [Setting Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 를 활용하여 extension 관리
 
@@ -203,4 +206,11 @@ using `.envrc`
 
 ```sh
 use nodejs v14.17.4
+### nodejs tool
+
+```bash
+npm install -g zx
+npm install -g tldr
+npm install -g asciicast2gif # cli recording to gif
+npm install -g commitizen@4.2.2 @commitlint@11.0.0 cz-conventional-changelog@3.3.0 # for conventional commit
 ```
