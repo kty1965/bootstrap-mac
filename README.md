@@ -79,6 +79,7 @@ brew install terraform-docs tflint
 brew install gawk tfsec coreutils checkov terrascan
 brew install graphviz # for graph
 brew install asciinema # for cli record
+brew install mike-engel/jwt-cli/jwt-cli
 ```
 
 ## .zshrc settings
@@ -213,4 +214,10 @@ npm install -g zx
 npm install -g tldr
 npm install -g asciicast2gif # cli recording to gif
 npm install -g commitizen@4.2.2 @commitlint@11.0.0 cz-conventional-changelog@3.3.0 # for conventional commit
+```
+
+### go tool
+
+```bash
+go get github.com/oklog/ulid/v2
 ```
