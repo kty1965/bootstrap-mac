@@ -207,6 +207,8 @@ using `.envrc`
 
 ```sh
 use nodejs v14.17.4
+```
+
 ### nodejs tool
 
 ```bash
