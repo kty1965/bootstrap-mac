@@ -76,6 +76,8 @@ brew install krew
 
 brew install argo
 brew install argocd
+
+brew install kompose
 ```
 
 
