@@ -14,39 +14,40 @@ need to packages.
 
 ```zsh
 brew tap homebrew/cask-versions
-brew cask install 1password
+brew install --cask 1password
+# brew install --cask android-platform-tools
+# brew install --cask blue-jeans
+brew install --cask docker
+brew install --cask google-chrome
+brew install --cask istat-menus
+brew install --cask java11
+brew install --cask karabiner-elements
+# brew install --cask mongodb-compass
+brew install --cask postman
+brew install --cask slack
+brew install --cask sublime-text
+brew install --cask visual-studio-code
+brew install --cask webtorrent
+brew install --cask alfred
+# brew install --cask android-studio
+# brew install --cask bose-soundtouch
+brew install --cask dropbox
+brew install --cask intellij-idea-ce
+brew install --cask iterm2
+# brew install --cask java8
+brew install --cask macdown
+brew install --cask notion
+# brew install --cask react-native-debugger
+brew install --cask spotify
+brew install --cask tunnelbear
+brew install --cask vlc
+brew install --cask zoomus
+brew install --cask keybase
+brew install --cask pritunl
+brew install --cask aws-vault
+brew install --cask tiles
 brew install --cask 1password-cli
-# brew cask install android-platform-tools
-# brew cask install blue-jeans
-brew cask install docker
-brew cask install google-chrome
-brew cask install istat-menus
-brew cask install java11
-brew cask install karabiner-elements
-# brew cask install mongodb-compass
-brew cask install postman
-brew cask install slack
-brew cask install sublime-text
-brew cask install visual-studio-code
-brew cask install webtorrent
-brew cask install alfred
-# brew cask install android-studio
-# brew cask install bose-soundtouch
-brew cask install dropbox
-brew cask install intellij-idea-ce
-brew cask install iterm2
-# brew cask install java8
-brew cask install macdown
-brew cask install notion
-# brew cask install react-native-debugger
-brew cask install spotify
-brew cask install tunnelbear
-brew cask install vlc
-brew cask install zoomus
-brew cask install keybase
-brew cask install pritunl
-brew cask install aws-vault
-brew cask install tiles
+brew install --cask ngrok
 ```
 
 ### install packages
