@@ -78,6 +78,9 @@ brew install argo
 brew install argocd
 
 brew install kompose
+brew install kustomize
+
+brew install stern
 ```
 
 
