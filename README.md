@@ -83,6 +83,12 @@ brew install asciinema # for cli record
 brew install mike-engel/jwt-cli/jwt-cli
 ```
 
+### install krew plugins
+
+```zsh
+kubectl krew install rbac-tool
+```
+
 ## .zshrc settings
 
 ```zsh
