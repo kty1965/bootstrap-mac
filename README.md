@@ -51,6 +51,8 @@ brew install --cask ngrok
 brew install --cask discord
 brew install --cask lens
 brew install --cask zoom
+
+brew install --cask via
 ```
 
 ### install packages
