@@ -41,13 +41,16 @@ brew install --cask notion
 brew install --cask spotify
 brew install --cask tunnelbear
 brew install --cask vlc
-brew install --cask zoomus
 brew install --cask keybase
 brew install --cask pritunl
 brew install --cask aws-vault
 brew install --cask tiles
 brew install --cask 1password-cli
 brew install --cask ngrok
+
+brew install --cask discord
+brew install --cask lens
+brew install --cask zoom
 ```
 
 ### install packages
@@ -66,6 +69,7 @@ brew install k9s # for kubernetes
 brew install kube-ps1 # for kubernetes
 brew install kubectx # for kubernetes
 brew install fzf # for kubernetes
+frew install stern # fro kubernetes
 brew install derailed/k9s/k9s
 brew install parquet-tools
 brew install telnet
@@ -81,6 +85,9 @@ brew install gawk tfsec coreutils checkov terrascan
 brew install graphviz # for graph
 brew install asciinema # for cli record
 brew install mike-engel/jwt-cli/jwt-cli
+brew install tfenv
+brew install pyenv
+brew install git-lfs
 ```
 
 ### install krew plugins
@@ -129,8 +136,8 @@ rvm install ruby-2.6.0 # ruby-2.6.0
 add `nvm`, `rvm` environemnt to `.zshrc` or `.bash_profile`
 
 ```zsh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-nvm install v12.18.2
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install v14.19.2
 ```
 
 ### pip pacakges
@@ -148,6 +155,18 @@ bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/bins
 
 ```zsh
 rvm use --default ruby-2.7.1
+nvm use --default v14.19.2
+```
+
+### pyenv
+
+```zsh
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+
+pyenv install 3.10.4
+pyenv global 3.10.4
 ```
 
 ### Add to `.zshrc` file
@@ -229,4 +248,29 @@ npm install -g commitizen@4.2.2 @commitlint@11.0.0 cz-conventional-changelog@3.3
 
 ```bash
 go get github.com/oklog/ulid/v2
+```
+
+### kubernetes tools
+
+Add kube-ps1, showcurrent kubernetes context
+
+```bash
+source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+PS1='$(kube_ps1)'$PS1
+```
+
+stern add bash-completion
+
+```bash
+source <(stern --completion=zsh)
+```
+
+kubectl zsh, alias k
+
+```bash
+alias k=kubectl
+complete -F __start_kubectl k
+
+source <(kubectl completion zsh)  # 현재 셸에 zsh의 자동 완성 설정
+echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc # 자동 완성을 zsh 셸에 영구적으로 추가한다.
 ```
