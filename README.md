@@ -90,6 +90,7 @@ brew install mike-engel/jwt-cli/jwt-cli
 brew install tfenv
 brew install pyenv
 brew install git-lfs
+brew install coursier/formulas/coursier
 ```
 
 ### install krew plugins
