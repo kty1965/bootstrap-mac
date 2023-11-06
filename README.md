@@ -91,12 +91,18 @@ brew install tfenv
 brew install pyenv
 brew install git-lfs
 brew install coursier/formulas/coursier
+brew install cilium-cli
+brew install hubble
 ```
 
 ### install krew plugins
 
 ```zsh
 kubectl krew install rbac-tool
+kubectl krew install cost
+kubectl krew install cert-manager
+kubectl krew install resource-capacity
+kubectl krew install sniff
 ```
 
 ## .zshrc settings
