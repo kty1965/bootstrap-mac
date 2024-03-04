@@ -28,7 +28,7 @@ brew install --cask slack
 brew install --cask sublime-text
 brew install --cask visual-studio-code
 brew install --cask webtorrent
-brew install --cask alfred
+brew install --cask raycast
 # brew install --cask android-studio
 # brew install --cask bose-soundtouch
 brew install --cask dropbox
@@ -151,14 +151,14 @@ nvm install v14.19.2
 
 ### pip pacakges
 
-```zsh
+````zsh
 pip install s3-tree
 
 ### gvm install
 
 ```zsh
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-```
+````
 
 ### node, ruby
 
@@ -218,7 +218,6 @@ function glc() {
   "workbench.colorTheme": "Monokai",
   "workbench.colorCustomizations": {}
 }
-
 ```
 
 Visual studio [Setting Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 를 활용하여 extension 관리
