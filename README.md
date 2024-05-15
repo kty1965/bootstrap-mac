@@ -71,7 +71,7 @@ brew install k9s # for kubernetes
 brew install kube-ps1 # for kubernetes
 brew install kubectx # for kubernetes
 brew install fzf # for kubernetes
-frew install stern # fro kubernetes
+brew install stern # fro kubernetes
 brew install derailed/k9s/k9s
 brew install parquet-tools
 brew install telnet
@@ -93,6 +93,8 @@ brew install git-lfs
 brew install coursier/formulas/coursier
 brew install cilium-cli
 brew install hubble
+brew install jabba
+brew install ripgrep
 ```
 
 ### install krew plugins
