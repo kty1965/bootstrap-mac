@@ -95,6 +95,7 @@ brew install cilium-cli
 brew install hubble
 brew install jabba
 brew install ripgrep
+brew install bat
 ```
 
 ### install krew plugins
