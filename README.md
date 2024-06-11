@@ -285,3 +285,34 @@ complete -F __start_kubectl k
 source <(kubectl completion zsh)  # 현재 셸에 zsh의 자동 완성 설정
 echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc # 자동 완성을 zsh 셸에 영구적으로 추가한다.
 ```
+
+## Modern Unix
+
+refer from: [ibraheemdev/modern-unix](https://github.com/ibraheemdev/modern-unix)
+
+| name | description | repo |
+| --- | --- | --- |
+| bat | A cat clone with syntax highlighting and Git integration. | [bat](https://github.com/sharkdp/bat) |
+| exa | A modern replacement for ls. | [exa](https://github.com/ogham/exa) |
+| lsd | The next gen file listing command. Backwards compatible with| [lsd](https://github.com/Peltoche/lsd) |
+| delta | A viewer for git and diff output| [delta](https://github.com/dandavison/delta) |
+| dust | A more intuitive version of du written in rust. | [dust](https://github.com/bootandy/dust) |
+| duf | A better df alternative | [duf](https://github.com/muesli/duf)
+| broot | A new way to see and navigate directory trees | [broot](https://github.com/Canop/broot) |
+| fd | A simple, fast and user-friendly alternative to find. | [fd](https://github.com/sharkdp/fd) |
+| ripgrep | An extremely fast alternative to grep that respects your gitignore | [ripgrep](https://github.com/BurntSushi/ripgrep) |
+| ag | A code searching tool similar to ack, but faster. | [ag](https://github.com/ggreer/the_silver_searcher) |
+| fzf | A general purpose command-line fuzzy finder. | [fzf](https://github.com/junegunn/fzf) |
+| mcfly | Fly through your shell history. Great Scott! | [mcfly](https://github.com/cantino/mcfly) |
+| choose | A human-friendly and fast alternative to cut and (sometimes) awk | [choose](https://github.com/theryangeary/choose)
+| sd | An intuitive find & replace CLI (sed alternative). | [sd](https://github.com/chmln/sd) |
+| cheat | Create and view interactive cheatsheets on the command-line. | [cheat](https://github.com/cheat/cheat) |
+| hyperfine | A command-line benchmarking tool. | [hyperfine](https://github.com/sharkdp/hyperfine) |
+| httpie | A modern, user-friendly command-line HTTP client for the API era. | [httpie](https://github.com/httpie/httpie) |
+| httpstat | http stat | [httpstat](https://httpstat.us/) |
+| curlie | The power of curl, the ease of use of httpie. | [curlie](https://github.com/rs/curlie) |
+| dog | A user-friendly command-line DNS client. dig on steroids | [dog](https://github.com/ogham/dog) |
+
+```bash
+brew install bat
+```
