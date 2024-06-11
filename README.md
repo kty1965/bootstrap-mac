@@ -293,7 +293,7 @@ refer from: [ibraheemdev/modern-unix](https://github.com/ibraheemdev/modern-unix
 | name | description | repo |
 | --- | --- | --- |
 | bat | A cat clone with syntax highlighting and Git integration. | [bat](https://github.com/sharkdp/bat) |
-| exa | A modern replacement for ls. | [exa](https://github.com/ogham/exa) |
+| eza | A modern, maintained replacement for ls. | [eza](https://github.com/eza-community/eza) |
 | lsd | The next gen file listing command. Backwards compatible with| [lsd](https://github.com/Peltoche/lsd) |
 | delta | A viewer for git and diff output| [delta](https://github.com/dandavison/delta) |
 | dust | A more intuitive version of du written in rust. | [dust](https://github.com/bootandy/dust) |
@@ -315,4 +315,14 @@ refer from: [ibraheemdev/modern-unix](https://github.com/ibraheemdev/modern-unix
 
 ```bash
 brew install bat
+brew install lsd
+brew install dust
+brew install duf
+brew install fd
+brew install ripgrep
+brew install mcfly
+brew install choose
+brew install dog
+brew install httpie
+brew install sd
 ```
