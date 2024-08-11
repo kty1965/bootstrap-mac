@@ -25,6 +25,7 @@ brew install --cask karabiner-elements
 # brew install --cask mongodb-compass
 brew install --cask postman
 brew install --cask slack
+brew install --cask slack-cli
 brew install --cask sublime-text
 brew install --cask visual-studio-code
 brew install --cask webtorrent
