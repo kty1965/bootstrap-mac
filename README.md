@@ -54,6 +54,9 @@ brew install --cask lens
 brew install --cask zoom
 
 brew install --cask via
+
+brew install --cask chatgpt
+brew install --cask claude
 ```
 
 ### install packages
